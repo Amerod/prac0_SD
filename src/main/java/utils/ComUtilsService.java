@@ -11,13 +11,13 @@ public class ComUtilsService {
         comUtils = new ComUtils(inputStream, outputStream);
     }
 
-    public void writeTest() {
-        //TODO: put your code here
+    public void writeTest() throws IOException{
+       comUtils.write_string("Hola");
     }
 
-    public String readTest() {
+    public String readTest() throws IOException{
         String result = "";
-        //TODO: put your code here
+        result = comUtils.read_string();
         return result;
     }
 
